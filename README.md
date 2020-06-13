@@ -6,7 +6,7 @@ This script will encode GT by giving each class a single pixel value (e.g., 0, 1
 
 
 ### Usage
-1- Edit the input color class according to you earlier colored GT genrated from [[RSML_to_Annotations](https://github.com/robail-yasrab/RSML-to-Image.git)] script/ or edit current script according to your color GT. 
+1- Edit the input color class according to you earlier colored GT genrated from [RSML_to_Image](https://github.com/robail-yasrab/RSML-to-Image.git) script/ or edit current script according to your color GT. 
 ```
 colourset = np.array([[0,0,0], [255,0,0],[255,0,255],[0,255,0], [0,255,255],[255,255,255]])  
 #List all colors present in your RGB visible Color Ground truth; in the case of RootNav 2.0, we have these color present (GT extracted from RSML to Annotation code). 

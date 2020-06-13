@@ -2,7 +2,7 @@
 
 In RootNav 2.0, if you use Cross-Entropy Loss for segmentation, you may encounter a Loss error (due to high RGB color encodings (e.g. [255,0,0]) ). To resolve that error, this script to generate RGB encoded ground truth (GT). Use this script after [RSML-to-Image](https://github.com/robail-yasrab/RSML-to-Image) script to generate the final GT. 
 
-This script will encode GT by giving each class a single pixel value (e.g., 0, 1, 2....). The resultant GT will look blank, but if you open those GTs in paint and drop any color, it will contain each given set of classes. 
+This script will encode GT by giving each class a single pixel value (e.g., 0, 1, 2....). The resultant GT will look blank, but if you open those GTs in paint and drop any color, it will show you each given set of classes. 
 
 
 ### Usage

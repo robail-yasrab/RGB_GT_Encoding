@@ -5,7 +5,7 @@ In RootNav 2.0, if you use Cross-Entropy Loss for segmentation, you may encounte
 This script will encode GT by giving each class a single pixel value (e.g., 0, 1, 2....). The resultant GT will look blank, but if you open those GTs in paint and drop any color, it will show you each given set of classes. 
 
 
-### Usage
+## Usage
 1- Edit the input color class according to you earlier colored GT genrated from [RSML_to_Image](https://github.com/robail-yasrab/RSML-to-Image.git) script/ or edit current script according to your color GT. 
 ```
 colourset = np.array([[0,0,0], [255,0,0],[255,0,255],[0,255,0], [0,255,255],[255,255,255]])  
@@ -24,3 +24,5 @@ cv2.imwrite('.././'+filename, res2) ## add path to your output folder where new 
 python RGB_anno.py
 ```
 
+### Class Weights  (optional)
+Use the resultant GT dataset to calculate dataset classes weights using [weighted_loss](https://github.com/robail-yasrab/dataset_weights) script. It helps CNN to easily converge .  
